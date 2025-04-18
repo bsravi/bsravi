@@ -1,52 +1,57 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery</title>
-  <style>
-    body { font-family: 'Open Sans', sans-serif; margin: 0; background: #fffaf0; padding: 1rem; }
-    h2 { text-align: center; color: #c62828; }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .item {
-      width: 100%;
-      max-width: 280px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 10px;
-      background: white;
-    }
-    .item img, .item video {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .item h4 {
-      margin: 8px 0 4px;
-      font-size: 1rem;
-      color: #333;
-    }
-  </style>
-</head>
+
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gallery</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fff8f0;
+    color: #333;
+  }
+  header {
+    background-color: #ff6600;
+    padding: 10px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 5px 0;
+    font-size: 2rem;
+    color: white;
+  }
+  header p {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #ffe0c0;
+    flex-wrap: wrap;
+  }
+  nav a {
+    text-decoration: none;
+    color: #ff3300;
+    font-weight: bold;
+  }
+  .container {
+    padding: 20px;
+  }
+  h2 {
+    color: #cc0000;
+  }
+</style></head>
 <body>
-  <h2>गैलरी</h2>
-  <div class="gallery">
-    <div class="item">
-      <h4>सेवा दिवस</h4>
-      <img src="gallery1.jpg" alt="Gallery Photo 1">
-    </div>
-    <div class="item">
-      <h4>युवा संवाद वीडियो</h4>
-      <video controls><source src="video1.mp4" type="video/mp4"></video>
-    </div>
-    <div class="item">
-      <h4>जन मिलन</h4>
-      <img src="gallery2.jpg" alt="Gallery Photo 2">
-    </div>
-  </div>
-</body>
-</html>
+<header><h1>Gallery</h1></header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="activity.html">Activity</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<div class="container">
+  <h2>फोटो और वीडियो गैलरी</h2>
+  <p>यहाँ पर स्क्रॉल करने वाली मीडिया गैलरी होगी (photos + videos).</p>
+</div>
+</body></html>

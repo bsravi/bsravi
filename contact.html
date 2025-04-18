@@ -1,47 +1,58 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-  <style>
-    body { font-family: 'Open Sans', sans-serif; background: #fffaf0; padding: 1rem; }
-    form {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    input, textarea {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background: #ff6f00;
-      color: white;
-      border: none;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    h2 { text-align: center; color: #c62828; }
-  </style>
-</head>
+
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fff8f0;
+    color: #333;
+  }
+  header {
+    background-color: #ff6600;
+    padding: 10px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 5px 0;
+    font-size: 2rem;
+    color: white;
+  }
+  header p {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #ffe0c0;
+    flex-wrap: wrap;
+  }
+  nav a {
+    text-decoration: none;
+    color: #ff3300;
+    font-weight: bold;
+  }
+  .container {
+    padding: 20px;
+  }
+  h2 {
+    color: #cc0000;
+  }
+</style></head>
 <body>
+<header><h1>Contact</h1></header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="activity.html">Activity</a>
+  <a href="gallery.html">Gallery</a>
+</nav>
+<div class="container">
   <h2>संपर्क करें</h2>
-  <form>
-    <input type="text" placeholder="नाम" required>
-    <input type="email" placeholder="ईमेल" required>
-    <input type="tel" placeholder="फ़ोन नंबर">
-    <textarea rows="5" placeholder="आपका संदेश..."></textarea>
-    <button type="submit">भेजें</button>
-  </form>
-</body>
-</html>
+  <p>Phone: +91 XXXXX XXXXX</p>
+  <p>Email: contact@bsravi.in</p>
+</div>
+</body></html>
