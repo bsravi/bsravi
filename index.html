@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B S Ravi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, nav, section, footer {
+      padding: 1rem;
+    }
+    header {
+      background-color: orange;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gallery-item {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+    .gallery-item h3 {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .campaign-feed {
+      max-width: 600px;
+      margin: auto;
+      padding: 1rem;
+    }
+    .post {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+    .post img, .post video {
+      width: 100%;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>B S Ravi</h1>
+    <p>Campaign Website</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#campaign">Campaign</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to B S Ravi's Official Website</h2>
+    <p>Connecting with people, sharing ideas, and working for a better future.</p>
+  </section>
+
+  <section id="campaign">
+    <h2>Campaign Updates</h2>
+    <div class="campaign-feed">
+      <div class="post">
+        <p>Post Title 1</p>
+        <img src="gallery1.jpg" alt="Campaign Photo 1">
+      </div>
+      <div class="post">
+        <p>Post Title 2</p>
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <h3>Photo Title 1</h3>
+        <img src="gallery1.jpg" alt="Gallery Photo 1">
+      </div>
+      <div class="gallery-item">
+        <h3>Video Title 1</h3>
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="gallery-item">
+        <h3>Photo Title 2</h3>
+        <img src="gallery2.jpg" alt="Gallery Photo 2">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: contact@bsravi.in</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 B S Ravi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
