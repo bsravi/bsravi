@@ -2,129 +2,136 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BS Ravi | भाजपा नेता</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff8f0;
-        }
-        header {
-            background-color: #ff5722;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #e65100;
-        }
-        nav a {
-            color: white;
-            padding: 1rem;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #bf360c;
-        }
-        .section {
-            padding: 2rem;
-        }
-        .section h2 {
-            color: #d84315;
-            border-bottom: 2px solid #ff5722;
-            padding-bottom: 0.5rem;
-        }
-        .profile-img {
-            display: block;
-            margin: 1rem auto;
-            border-radius: 50%;
-            border: 4px solid #ff7043;
-            width: 150px;
-        }
-        .campaigns, .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        .card {
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 1rem;
-            width: 250px;
-            text-align: center;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 6px;
-        }
-        footer {
-            text-align: center;
-            background-color: #ff5722;
-            color: white;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BS Ravi - भाजपा नेता</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #fffaf0;
+      color: #222;
+    }
+    header {
+      background-color: #ff6f00;
+      color: white;
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .profile-pic {
+      display: block;
+      margin: auto;
+      border-radius: 50%;
+      border: 4px solid #ff6f00;
+      width: 150px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #c62828;
+    }
+    section {
+      margin-top: 40px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      border: 2px solid #ccc;
+    }
+    @media (max-width: 600px) {
+      .menu-icon { display: block; }
+      nav { display: none; flex-direction: column; }
+      nav.show { display: flex; }
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav").classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
-    <header>
-        <h1>BS Ravi</h1>
-        <p>भाजपा नेता | समाजसेवी | बिजनौर, उत्तर प्रदेश</p>
-    </header>
 
-    <nav>
-        <a href="#parichay">परिचय</a>
-        <a href="#drishtikon">दृष्टिकोण</a>
-        <a href="#campaigns">अभियान</a>
-        <a href="#gallery">फोटो गैलरी</a>
-    </nav>
+<header>
+  <h3>BS Ravi</h3>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <nav>
+    <a href="#intro">परिचय</a>
+    <a href="#campaign">अभियान</a>
+    <a href="#gallery">गैलरी</a>
+  </nav>
+</header>
 
-    <div class="section" id="parichay">
-        <h2>परिचय</h2>
-        <img src="bsravi.jpg" alt="BS Ravi" class="profile-img">
-        <p>BS Ravi भारतीय जनता पार्टी (भाजपा) के एक समर्पित नेता हैं जो उत्तर प्रदेश के बिजनौर जिले से हैं। उन्होंने पूर्व में जिला पंचायत सदस्य के रूप में सेवा दी है और वर्तमान में भाजपा अनुसूचित मोर्चा के जिला महामंत्री हैं। वे समाज के वंचित वर्गों के उत्थान के लिए सतत कार्य कर रहे हैं।</p>
+<div class="container">
+  <img src="bs_ravi_profile.png" class="profile-pic" alt="BS Ravi">
+
+  <section id="intro">
+    <h2>परिचय</h2>
+    <p>
+      BS Ravi भारतीय जनता पार्टी (भाजपा) के एक समर्पित नेता हैं जो उत्तर प्रदेश के बिजनौर जिले से हैं।
+      उन्होंने पूर्व में जिला पंचायत सदस्य के रूप में सेवा दी है और वर्तमान में भाजपा अनुसूचित मोर्चा के जिला महामंत्री हैं।
+      वे समाज के वंचित वर्गों के उत्थान के लिए सतत कार्य कर रहे हैं।
+    </p>
+    <ul>
+      <li>अनुसूचित जातियों और पिछड़े वर्गों के अधिकारों की रक्षा</li>
+      <li>ग्रामीण विकास और शिक्षा को बढ़ावा देना</li>
+      <li>युवाओं के लिए रोजगार के अवसर सृजित करना</li>
+      <li>सामाजिक एकता और समानता के लिए प्रयासरत रहना</li>
+    </ul>
+  </section>
+
+  <section id="campaign">
+    <h2>नई कैम्पेन</h2>
+    <p>
+      BS Ravi द्वारा हाल ही में "स्वच्छ गाँव – स्वच्छ भारत" नामक एक नई जनजागरूकता अभियान शुरू की गई है।
+      इस अभियान का उद्देश्य ग्रामीण इलाकों में सफाई, स्वच्छता और स्वास्थ्य के प्रति जागरूकता फैलाना है।
+      इसके अंतर्गत विभिन्न गाँवों में सफाई अभियान, सेमिनार और जनसंवाद कार्यक्रम आयोजित किए जा रहे हैं।
+    </p>
+    <img src="gallery1.jpg" alt="Campaign Image" style="width:100%;max-width:500px;display:block;margin:auto;border-radius:12px;border:2px solid #ddd;">
+  </section>
+
+  <section id="gallery">
+    <h2>फोटो गैलरी</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Gallery Image 1">
+      <img src="gallery2.jpg" alt="Gallery Image 2">
+      <img src="gallery3.jpg" alt="Gallery Image 3">
     </div>
+  </section>
+</div>
 
-    <div class="section" id="drishtikon">
-        <h2>दृष्टिकोण और कार्य</h2>
-        <ul>
-            <li>अनुसूचित जातियों और पिछड़े वर्गों के अधिकारों की रक्षा</li>
-            <li>ग्रामीण विकास और शिक्षा को बढ़ावा देना</li>
-            <li>युवाओं के लिए रोजगार के अवसर सृजित करना</li>
-            <li>सामाजिक एकता और समानता के लिए प्रयासरत रहना</li>
-        </ul>
-    </div>
-
-    <div class="section" id="campaigns">
-        <h2>नई कैंपेन</h2>
-        <div class="campaigns">
-            <div class="card">
-                <img src="cleanvillage.jpg" alt="स्वच्छ गाँव अभियान">
-                <h3>स्वच्छ गाँव – स्वच्छ भारत</h3>
-                <p>BS Ravi द्वारा हाल ही में चलाया गया एक अभियान जिसमें गाँवों में सफाई और स्वास्थ्य के प्रति जागरूकता फैलाई गई।</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="section" id="gallery">
-        <h2>फोटो गैलरी</h2>
-        <div class="gallery">
-            <img src="bsravi.jpg" alt="BS Ravi" width="150" height="150">
-            <img src="bsravi.jpg" alt="BS Ravi" width="150" height="150">
-            <img src="bsravi.jpg" alt="BS Ravi" width="150" height="150">
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2025 BS Ravi | सभी अधिकार सुरक्षित
-    </footer>
 </body>
 </html>
