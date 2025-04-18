@@ -1,15 +1,52 @@
-<html><head><title>Gallery</title><style>
-  body { font-family: 'Open Sans', sans-serif; background: #fffaf0; margin: 0; padding: 1rem; }
-  .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-  .item { width: 30%; min-width: 200px; border: 1px solid #ccc; padding: 5px; border-radius: 8px; }
-  .item img, .item video { width: 100%; border-radius: 5px; }
-  .item h4 { text-align: center; margin: 5px 0; }
-</style></head>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; margin: 0; background: #fffaf0; padding: 1rem; }
+    h2 { text-align: center; color: #c62828; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .item {
+      width: 100%;
+      max-width: 280px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background: white;
+    }
+    .item img, .item video {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .item h4 {
+      margin: 8px 0 4px;
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
 <body>
-  <h2 style="text-align:center;color:#c62828;">Photo & Video Gallery</h2>
+  <h2>गैलरी</h2>
   <div class="gallery">
-    <div class="item"><h4>सेवा दिवस</h4><img src="gallery1.jpg" /></div>
-    <div class="item"><h4>सफाई अभियान</h4><video controls><source src="video1.mp4" type="video/mp4" /></video></div>
-    <div class="item"><h4>जन संवाद</h4><img src="gallery2.jpg" /></div>
+    <div class="item">
+      <h4>सेवा दिवस</h4>
+      <img src="gallery1.jpg" alt="Gallery Photo 1">
+    </div>
+    <div class="item">
+      <h4>युवा संवाद वीडियो</h4>
+      <video controls><source src="video1.mp4" type="video/mp4"></video>
+    </div>
+    <div class="item">
+      <h4>जन मिलन</h4>
+      <img src="gallery2.jpg" alt="Gallery Photo 2">
+    </div>
   </div>
-</body></html>
+</body>
+</html>

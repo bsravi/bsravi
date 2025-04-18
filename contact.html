@@ -1,16 +1,47 @@
-<html><head><title>Contact</title><style>
-  body { font-family: 'Open Sans', sans-serif; background: #fffaf0; padding: 1rem; }
-  form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
-  input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-  button { background: #ff6f00; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
-</style></head>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; background: #fffaf0; padding: 1rem; }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #ff6f00;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 { text-align: center; color: #c62828; }
+  </style>
+</head>
 <body>
-  <h2 style="text-align:center;color:#c62828;">Contact Us</h2>
+  <h2>संपर्क करें</h2>
   <form>
     <input type="text" placeholder="नाम" required>
     <input type="email" placeholder="ईमेल" required>
     <input type="tel" placeholder="फ़ोन नंबर">
-    <textarea placeholder="संदेश लिखें..." rows="5"></textarea>
+    <textarea rows="5" placeholder="आपका संदेश..."></textarea>
     <button type="submit">भेजें</button>
   </form>
-</body></html>
+</body>
+</html>
