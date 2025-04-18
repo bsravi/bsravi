@@ -1,57 +1,15 @@
-
-<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gallery</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background-color: #fff8f0;
-    color: #333;
-  }
-  header {
-    background-color: #ff6600;
-    padding: 10px;
-    text-align: center;
-  }
-  header h1 {
-    margin: 5px 0;
-    font-size: 2rem;
-    color: white;
-  }
-  header p {
-    margin: 0;
-    font-size: 1rem;
-    color: white;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
-    background-color: #ffe0c0;
-    flex-wrap: wrap;
-  }
-  nav a {
-    text-decoration: none;
-    color: #ff3300;
-    font-weight: bold;
-  }
-  .container {
-    padding: 20px;
-  }
-  h2 {
-    color: #cc0000;
-  }
+<html><head><title>Gallery</title><style>
+  body { font-family: 'Open Sans', sans-serif; background: #fffaf0; margin: 0; padding: 1rem; }
+  .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .item { width: 30%; min-width: 200px; border: 1px solid #ccc; padding: 5px; border-radius: 8px; }
+  .item img, .item video { width: 100%; border-radius: 5px; }
+  .item h4 { text-align: center; margin: 5px 0; }
 </style></head>
 <body>
-<header><h1>Gallery</h1></header>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="activity.html">Activity</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<div class="container">
-  <h2>फोटो और वीडियो गैलरी</h2>
-  <p>यहाँ पर स्क्रॉल करने वाली मीडिया गैलरी होगी (photos + videos).</p>
-</div>
+  <h2 style="text-align:center;color:#c62828;">Photo & Video Gallery</h2>
+  <div class="gallery">
+    <div class="item"><h4>सेवा दिवस</h4><img src="gallery1.jpg" /></div>
+    <div class="item"><h4>सफाई अभियान</h4><video controls><source src="video1.mp4" type="video/mp4" /></video></div>
+    <div class="item"><h4>जन संवाद</h4><img src="gallery2.jpg" /></div>
+  </div>
 </body></html>
